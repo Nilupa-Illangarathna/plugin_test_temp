@@ -20,29 +20,30 @@ async function validateAndLoadPlugin(domain) {
   }
 
   try {
-    const response = await fetch(`${SERVER_URL}/validate-domain`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ domain })
-    });
+    // const response = await fetch(`${SERVER_URL}/validate-domain`, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify({ domain })
+    // });
 
-    const result = await response.json();
-    const returnedApiKey = response.headers.get("x-api-key");
+    // const result = await response.json();
+    // const returnedApiKey = response.headers.get("x-api-key");
 
 
-    if (returnedApiKey !== API_KEY) {
-      return;
-    }
+    // if (returnedApiKey !== API_KEY) {
+    //   return;
+    // }
 
-    if (result.success) {
+    // if (result.success) {
 
-      isAllowed = true;
-      createTriggerButton();
-    } else {
-      isAllowed = false;
-    }
+    //   isAllowed = true;
+    //   createTriggerButton();
+    // } else {
+    //   isAllowed = false;
+    // }
+    createTriggerButton();
   } catch (error) {
   }
 }
