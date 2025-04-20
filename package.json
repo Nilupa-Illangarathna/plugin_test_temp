@@ -1,0 +1,46 @@
+{
+  "name": "accessibilityplugin",
+  "version": "1.0.0",
+  "description": "accessibilityplugin is a web accessibility tool designed to help organizations ensure their websites, apps, and documents are accessible to people with disabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "wcag",
+    "aria",
+    "js"
+  ],
+  "author": "pradishan",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "process": "^0.11.10",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "accessibilityplugin": "file:",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-slow-down": "^2.0.3",
+    "fuse.js": "^7.1.0",
+    "fuzzysort": "^3.1.0",
+    "helmet": "^8.1.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "simple-keyboard": "^3.8.32",
+    "sqlite3": "^5.1.7",
+    "stream-browserify": "^3.0.0",
+    "vm-browserify": "^1.1.2"
+  }
+}
