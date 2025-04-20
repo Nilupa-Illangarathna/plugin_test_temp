@@ -383,7 +383,7 @@ export async function initializePlugin(serverUrl, apiKey) {
   SERVER_URL = serverUrl;
   API_KEY = apiKey;
   let domain = window.location.origin;
-  domain = "https://nilupa-illangarathna.github.io";
+  // domain = "https://nilupa-illangarathna.github.io";
   // domain = "https://InvalidDomain";
 
 
